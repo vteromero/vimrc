@@ -7,7 +7,7 @@ let mapleader=" "
 " Show line number
 set number
 
-" Autocomplete
+" Indent configurations
 set tabstop=4
 set shiftwidth=4
 set expandtab
