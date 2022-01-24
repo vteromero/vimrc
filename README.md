@@ -18,9 +18,9 @@ cp .vimrc ~/
 
 3. Copy .vim files to your ~/.vim/colors folder:
 
-    ```sh
-    cp seoul256.vim/colors/*.vim ~/.vim/colors
-    ```
+   ```sh
+   cp seoul256.vim/colors/*.vim ~/.vim/colors
+   ```
 
 4. Update your `~/.vimrc`:
 
@@ -48,5 +48,6 @@ cp .vimrc ~/
 
 ```sh
 git clone https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
+git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/pack/dist/start/vim-airline-themes
 ```
 
