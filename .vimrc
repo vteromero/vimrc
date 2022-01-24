@@ -1,29 +1,27 @@
-" Pathogen
-execute pathogen#infect()
-
-" Leader Key = <space>
-let mapleader=" "
-
-" Show line number
+syntax on
 set number
+set backspace=indent,eol,start " make backspace (del) key to work on insert mode
+set hlsearch
+set ignorecase
+set incsearch
 
-" Indent configurations
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
+" colors setup
+colorscheme seoul256
+set background=light
 
-" Show max width
-set colorcolumn=100
+" folding options
+set foldmethod=syntax
+set nofoldenable
 
-" Show Matching Parenthesis
-set showmatch
+" fuzzy file finder (all files)
+nnoremap <leader>o :Files<Cr>
 
-" NERDTree configurations
-let NERDTreeShowHidden=1
-nmap <leader>n :NERDTreeToggle<CR>
-nmap <leader>j :NERDTreeFind<CR>
-let NERDTreeIgnore=['\.swp']
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
+" fuzzy file finder (only git files)
+nnoremap <leader>p :GFiles<Cr>
+
+" text search (fuzzy searching)
+nnoremap <leader>f :Rg<Cr>
+
+" toggle fold section
+nnoremap <Space> zA
 
