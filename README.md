@@ -12,22 +12,22 @@ cp .vimrc ~/
 
 2. Clone repo of choice:
 
-```sh
-git clone https://github.com/junegunn/seoul256.vim
-```
+   ```sh
+   git clone https://github.com/junegunn/seoul256.vim
+   ```
 
 3. Copy .vim files to your ~/.vim/colors folder:
 
-```sh
-cp seoul256.vim/colors/*.vim ~/.vim/colors
-```
+    ```sh
+    cp seoul256.vim/colors/*.vim ~/.vim/colors
+    ```
 
 4. Update your `~/.vimrc`:
 
-```
-colorscheme seoul256
-set background=light
-```
+    ```
+    colorscheme seoul256
+    set background=light
+    ```
 
 # Plugins
 
@@ -39,10 +39,10 @@ set background=light
 
 3. Clone fzf repos into `~/.vim/pack/dist/start`
 
-```sh
-git clone https://github.com/junegunn/fzf.git ~/.vim/pack/dist/start/fzf
-git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/dist/start/fzf.vim
-```
+    ```sh
+    git clone https://github.com/junegunn/fzf.git ~/.vim/pack/dist/start/fzf
+    git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/dist/start/fzf.vim
+    ```
 
 ### Airline
 
