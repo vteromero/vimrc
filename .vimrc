@@ -5,6 +5,13 @@ set hlsearch
 set ignorecase
 set incsearch
 
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+set autoindent
+
 " colors setup
 colorscheme seoul256
 set background=light
@@ -12,6 +19,9 @@ set background=light
 " folding options
 set foldmethod=syntax
 set nofoldenable
+
+" set <leader> to Space key
+let mapleader=" "
 
 " fuzzy file finder (all files)
 nnoremap <leader>o :Files<Cr>
@@ -22,6 +32,10 @@ nnoremap <leader>p :GFiles<Cr>
 " text search (fuzzy searching)
 nnoremap <leader>f :Rg<Cr>
 
-" toggle fold section
-nnoremap <Space> zA
-
+" split windows (vertical splits)
+nnoremap <leader>w <C-w>v<C-w>l " open new vertical window and move to it
+nnoremap <leader>q <C-w>q " close split window
+nnoremap <leader>h <C-w>h " move left
+nnoremap <leader>j <C-w>j " move down
+nnoremap <leader>k <C-w>k " move up
+nnoremap <leader>l <C-w>l " move right
