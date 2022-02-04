@@ -27,7 +27,7 @@ let mapleader=" "
 nnoremap <leader>o :Files<Cr>
 
 " fuzzy file finder (only git files)
-nnoremap <leader>p :GFiles<Cr>
+nnoremap <leader>p :GFiles --cached  --others --exclude-standard<Cr>
 
 " text search (fuzzy searching)
 nnoremap <leader>f :Rg<Cr>
